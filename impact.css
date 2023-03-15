@@ -1,0 +1,247 @@
+.topbar{
+  background-color:#00796b;
+  padding:3px;
+  color:	#F0F0F0; 
+}
+.socialmedia:hover{
+  color:white;
+}
+/*================Navbar=================*/
+.header{
+    background-color:#00796b;
+    color:#F0F0F0; 
+    height:50px;  
+} 
+.mnav li{
+ list-style-type:none;
+ }
+ .mnav li a{
+ color:#F0F0F0;
+ text-decoration:none;
+ }
+ ul.navc>li {
+ float:left;
+ padding:8px 10px;
+ }
+.mnav li:hover{
+  border-bottom: 2px solid red;
+  }
+.mydropdown li:hover{
+ border-bottom:0px;
+ 
+}
+.mydropdown li:hover a{
+  color:red;
+}
+   /*-- =================navbar mobile==============--*/
+.mnav a.togglericon{
+   color:#F0F0F0;
+}
+   .togglericon{
+   display:none;
+   color:#F0F0F0;
+   text-decoration:none;
+   }
+   @media (max-width:900px){
+   .mnav ul{ display:none;}
+   a.togglericon {display:block;}
+   }
+   .mnav.mobile{
+   position:fixed;
+   float:none;
+   background: rgba(0, 131, 116, 0.9);
+   top:0;
+   right:0;
+   left:0;
+   bottom:0;
+   z-index:999;
+   }
+   .mnav.mobile ul.navc{
+   display:block;
+   float:none;
+   position:absolute;
+   top:1rem;
+   right:1rem;
+   left:1rem;
+   bottom:1rem;
+   background-color:#00796b;
+   color:white;
+   border-radius:6px;
+   }
+   .mnav.mobile li{
+   float:none;
+   }
+     /*-- =================Toggler Icon==============--*/
+     .togglericon{
+     display:none;
+     color:black;
+     text-decoration:none;
+     }
+    .mnav.mobile .togglericon{
+       position:fixed;
+       z-index:1000;
+       top:1.5rem;
+       right:1.5rem;
+       color:white;
+     }
+ /*-- =================Dropdown==============--*/
+ .mydropdown{
+ position:relative;
+ } 
+ .mydropdown ul{
+   display:block;
+   position:relative;
+   z-index:1010;
+   top:2.2rem;
+   left:0rem;
+   float:none;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   min-width:8rem;
+   padding:10px 0px 10px 0px;
+ }
+ .mydropdown li{
+ padding:5px 10px;
+ background:#F0F0F0;
+ color:black;
+ }
+ .mydropdown li a{
+ color:black;
+ }
+ ul.dropdown-content{
+ display:none;
+ position:absolute;
+ }
+ .mnav.mobile .mydropdown ul{
+ background-color:#F0F0F0;
+ position:static;
+ border: 1px solid #006459;
+ margin:10px 20px 0px 20px;
+ }
+ li.mydropdown:hover ul.dropdown-content{
+ display:block;
+ }
+/*==============Navbar end===============*/
+.welcome{
+  padding-top:20px;
+  background-color:#00796b;
+  color:#F0F0F0;
+  position:relative;
+  z-index:800;
+}
+
+.get-started{
+  background-color:rgba(255, 255, 255, 0.1) !important;
+  box-shadow:0 0 15px rgb(0 0 0 / 10%);
+  border-radius:10% !important;
+  color:#F0F0F0 !important;
+  text-decoration:none;
+  font-size:20px;
+  border:none;
+  white-spece:nowrap;
+  padding:0.4rem 0.8rem;
+}
+.watch-video{
+  background-color:#00796b;
+  white-space:nowrap;
+  border:none;
+  border-radius:50px ;
+  color:#F0F0F0;
+  padding: 14px 40px;
+  text-decoration:none;
+  font-size:1rem;
+  position:relative;
+  z-index:990;
+}
+ /*-- =================Top 4 cards==============--*/
+.topcards{
+  position:relative;
+  z-index:801;
+  font-size:25px;
+}
+.cardicon{
+  color:#F0F0F0;
+  line-height:70px;
+}
+.mycard{
+ padding:2.5rem;
+ border-radius:30px;
+ background:#00796b;
+ color:white;
+ text-align: center;
+ box-shadow:0 0 15px rgb(0 0 0 / 10%);
+}
+@media (min-width:1200px){
+  .topcards{ 
+  position:relative;
+  margin-top:0px;
+  margin-bottom:100px;
+  top:70px;
+  } 
+}
+ /*-- ===============Top 4 cards end============--*/
+
+ /*-- =================About Us==============--*/
+.aboutus{
+ 
+}
+.line{
+  position:relative;
+} 
+.section-header h2::after{
+  content:"";
+  display:block;
+  margin:auto;
+  width:50px;
+  height:3px;
+  background-color:#00796b;
+  margin-top:15px;
+}
+.section-header {
+  text-align:center;
+  margin-bottom:50px;
+}
+.section-header h2 {
+  padding:20px;
+  
+}
+
+.tickicon{
+  color:#00796b;
+  margin-right:3px;
+}
+ /*-- =================Sercices==============--*/
+.serviceicon{
+  font-size:40px;
+  color:#00796b;
+}
+.servicecard{
+  box-shadow:0 0 15px 0 rgb(0 0 0 / 10%);
+  padding:30px;
+  border-radius:15px; 
+}
+.servicecard h3{
+  border-bottom:2px solid #00796b;
+}
+#more1, #more2, #more3 , #more4 ,#more5 , #more6{
+              display:none;
+          }
+          .readmoreicon{
+              font-size:25px;
+              font-weight:900;
+          }
+          #showbtn1,  #showbtn2,  #showbtn3,  #showbtn4,  #showbtn5,  #showbtn6{
+              padding:12px 20px;
+              border:none;
+              background-color:#00796b;
+              color:white;
+              border-radius:6px;
+              white-space:nowrap;
+              box-shadow:0 0 15px 0 rgb(0 0 0 / 10%);
+              font-size:20px;
+              margin-left:auto;
+          }
+.pend{
+  background-color:#00796b;
+              color:white;
+  padding:30px 0px;
+}
