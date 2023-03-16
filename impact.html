@@ -1,0 +1,285 @@
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./impact.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+      
+  <head>
+<body>
+  <section id="topbar" class=" topbar d-flex align-items-center"> 
+      <div class="container-xxl d-flex flex-column flex-md-row justify-content-between align-items-center order-2 order-md-1">
+        <div class="d-flex">
+                    
+          <p class="mail"><i class="bi bi-envelope"></i>&nbsp;&nbsp;Contact@example.com&nbsp;&nbsp; </p>         
+          <p class="mail"><i class="bi bi-phone"></i> &nbsp;&nbsp;+1&nbsp;5889&nbsp;55488 </p>
+        </div>  <!--flex first column-->
+        <div class=" order-1 order-md-2">
+          <i class="bi bi-twitter socialmedia"></i>&nbsp;&nbsp;
+          <i class="bi bi-facebook socialmedia"></i>&nbsp;&nbsp;
+          <i class="bi bi-instagram socialmedia"></i>&nbsp;&nbsp;
+          <i class="bi bi-linkedin socialmedia"></i>&nbsp;&nbsp;
+       
+        </div>  <!--flex second column-->
+        </div>   <!--flex-->
+    </section>
+  <!--==================Navbar=====================-->
+   <header class="header" id="header">
+      <div class="container-xxl mnvb d-flex justify-content-between">
+          <h2> Impact <span style="color:red;">.</span></h2>
+          <nav class="mnav" id="myNavbar">
+              <a class="togglericon" id="TogglerIcon" onclick= "navCol()" style="font-size:18px;">&#9776;</a> 
+              <ul class="navc">
+                  <li><a href="#"> Home </a> </li>
+                  <li><a href="#"> About </a> </li>
+                  <li><a href="#"> Services </a> </li>
+                  <li><a href="#"> Portfolio </a> </li>
+                  <li><a href="#"> Team </a> </li>
+                  <li><a href="#"> Blog </a> </li>
+                  <li class="mydropdown"><a href="#" class="dropdownbtn" onclick="DropDownFun()"> Dropdown </a> 
+                  <ul class="dropdown-content" id="dropContent" role="button">
+                      <li><a href="#"> item 1 </a></li>
+                      <li><a href="#"> item 2 </a></li>
+                      <li><a href="#"> item 3 </a></li>
+                      <li><a href="#"> item 4 </a></li>
+                  </ul>  
+                  </li>
+                  <li><a href="#"> Contacts </a> </li>
+                  <li><a href="#" > News </a> </li>
+              </ul>   <!-- navbar list-->
+          </nav>
+      </div>  <!-- container-->
+
+  </header>
+ <script>
+     //function DropDownFun(){
+     //document.getElementById("dropContent").classList.toggle('show');
+     //}
+     
+     function navCol(){
+     let x=document.getElementById("myNavbar");
+     let y=document.getElementById("TogglerIcon");
+     if (x.className === "mnav"){
+     x.className += " mobile";
+     y.innerHTML="&#9587;";
+     } else {
+     
+     x.className = "mnav";
+     y.innerHTML="&#9776;";
+     }
+     }
+
+ </script>
+    
+     <!--==================Welcome=====================-->
+  <section id="welcome" class="welcome">
+    <div class="container position-relative">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1">
+          <h1> Welcome to Impact </h1>
+          <p class="mt-3">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat. </p>
+          <div class="d-flex justify-content-center justify-content-lg-start mt-3">
+          <button class="get-started"> Get Started </button>
+           
+          <button class="watch-video d-flex align-items-center"> <i class="bi bi-play-circle-fill" style="font-size:30px !important; margin-right:10px; display:inline-block;"></i> Watch Video </button>
+          </div>   <!--Buttons-->
+        </div>   <!--First Column-->
+          <div class="col-lg-6 d-flex align-items-center justify-content-center order-1 order-lg-2">
+            <img src="Images/impact.webp" width=100%; Height="90%">
+          
+        </div> <!--Second Column-->
+      </div><!--Grid-->   
+  <!--==================Top Cards=====================-->       
+  <div class=" topcards position-relative mt-md-4">
+    <div class="row gy-4"> 
+      
+     <div class="col-lg-3 col-md-6">
+       <div class="mycard d-flex flex-column jusitfy-content-stretch align-items-center">
+      <i class="bi bi-tv cardicon"></i>
+       <p> Lorem ipsum </p>
+       </div>
+      
+     </div>  <!--First Card-->
+       <div class=" col-lg-3 col-md-6">
+         <div class="mycard d-flex flex-column jusitfy-content-stretch align-items-center">
+      <i class="bi bi-app-indicator cardicon"></i>
+       <p> Nemo enim  </p>
+         </div>
+      
+     </div>  <!--Second Card-->
+       <div class="col-lg-3 col-md-6">
+         <div class="mycard d-flex flex-column jusitfy-content-stretch align-items-center">
+      <i class="bi bi-geo-alt cardicon"></i>
+       <p> sed perspicit </p>
+         </div>
+      
+     </div>  <!--Third Card-->
+       <div class="col-lg-3 col-md-6">
+         <div class="mycard d-flex flex-column jusitfy-content-stretch align-items-center">
+      <i class="bi bi-compass cardicon"></i>
+       <p> Magni Dolores </p>
+         </div>
+      
+     </div>  <!--Fourth Card-->
+    </div>    <!--Grid-->
+    
+  </div>
+  </section>
+    <!--=============about Us===================-->
+    <section class="aboutus" id="AboutUs">
+      <div class="container-xxl mt-5">
+        <div class="section-header">
+      <h2> About Us</h2>
+          <p> Aperiam dolorum et et wuia molestias qui eveniet numquam nihil porro incidunt dolores placeat sunt id nobis omnis tiledo stran delop </p>
+      </div>     <!--Section header-->
+        
+        <div class="row gy-4">
+          <div class="col-lg-6 d-flex flex-column justify-content-stretch">
+            <h2> Voluptatem dignissimos provident quasi corporis </h2>
+            <img src="/Images/phone and tablet.avif" class="img=fluid rounded-4 mb-2">
+            <p> Ut fugiat ut sunt quia veniam. Voluptate perferendis perspiciatis quod nisi et. Placeat debitis quia recusandae odit et consequatur voluptatem. Dignissimos pariatur consectetur fugiat voluptas ea.
+<br>
+<br>
+Temporibus nihil enim deserunt sed ea. Provident sit expedita aut cupiditate nihil vitae quo officia vel. Blanditiis eligendi possimus et in cum. Quidem eos ut sint rem veniam qui. Ut ut repellendus nobis tempore doloribus debitis explicabo similique sit. Accusantium sed ut omnis beatae neque deleniti repellendus. </p>
+          </div> <!--FIrst Column-->
+          <div class="col-lg-6 d-flex flex-column justify-content-stretch"> 
+            <p style="font-style:italic;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu۔ </p>
+            <ul style="list-style-type:none; padding:0;"> 
+              <li> <i class="bi bi-check-square-fill tickicon"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li> <i class="bi bi-check-square-fill tickicon"></i> Duis aute irure dolor in reprehenderit in voluptate velit. </li>
+              <li>  <i class="bi bi-check-square-fill tickicon"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+              
+              <p class="mt-2"> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+              <img src="/Images/Teamwork.webp" class="img-fluid rounded-4 mt-2">
+          </div>  <!--Second Column-->
+        </div> <!--Grid-->
+        
+      </div> <!--container-xxl-->
+    </section>   <!--About Us section-->
+      <!--================Services=================-->
+      <section class="services" id="Services">
+        <div class="container-xxl">
+          <div class="section-header">
+      <h2> Our Services</h2>
+      </div>     <!--Section header-->
+  <div class="row g-4">
+  
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+        <div class="servicecard">
+        <i class="bi bi-bag-check serviceicon pb-2"></i>
+          <h3 class="pb-2"> Nesciunt Mate </h3>
+          
+          <p id="less" class="pb-2"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.<span id="more1">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</span></p>
+ <button id="showbtn1" onclick="showMoreBtn(1)"> Read More &#8595 </button> 
+        </div>
+      </div> <!--First-->
+    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+        <div class="servicecard">
+        <i class="bi bi-wifi serviceicon pb-2"></i>
+          <h3 class="pb-2"> Eosle Commodi </h3>
+          <p id="less" class="pb-2"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.<span id="more2">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</span></p>
+ <button id="showbtn2" onclick="showMoreBtn(2)"> Read More &#8595 </button> 
+        </div>
+      </div> <!--Second-->
+    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+        <div class="servicecard">
+        <i class="bi bi-blockquote-left serviceicon pb-2"></i>
+          <h3 class="pb-2"> Ledlo Marks </h3>
+          <p id="less" class="pb-2"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.<span id="more3">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</span></p>
+ <button id="showbtn3" onclick="showMoreBtn(3)"> Read More &#8595 </button> 
+        </div>
+      </div> <!--Third-->
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+        <div class="servicecard ">
+        <i class="bi bi-bookmarks serviceicon pb-2"></i>
+          <h3 class="pb-2"> Asperiosis commidis </h3>
+          <p id="less" class="pb-2"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.<span id="more4">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</span></p>
+ <button id="showbtn4" onclick="showMoreBtn(4)"> Read More &#8595 </button> 
+        </div>
+      </div> <!--Fourth-->
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+        <div class="servicecard">
+        <i class="bi bi-aspect-ratio serviceicon pb-2"></i>
+          <h3 class="pb-2"> Velerit Domoremque </h3>
+          <p id="less" class="pb-2"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.<span id="more5">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</span></p>
+ <button id="showbtn5" onclick="showMoreBtn(5)"> Read More &#8595 </button> 
+        </div>
+      </div> <!--Fifth-->
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+        <div class="servicecard">
+        <i class="bi bi-bar-chart-steps serviceicon pb-2"></i>
+          <h3 class="pb-2"> Dolori Architecto </h3>
+          <p id="less" class="pb-2"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.<span id="more6">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</span></p>
+ <button id="showbtn6" onclick="showMoreBtn(6)"> Read More &#8595 </button> 
+        </div>
+      </div> <!--Sixth-->
+ </div> <!--grid--> 
+ </div>  <!--container-xxl-->
+</body>
+
+<script>
+    function showMoreBtn(n){
+    var x =document.getElementById("more" + n);
+    var y =document.getElementById("showbtn" + n);
+    if (x.style.display === "none"){
+    x.style.display = "inline";
+    y.innerHTML = "Read Less ↑";
+    }
+    else {
+    x.style.display = "none";
+    y.innerHTML= "Read More &#8595; "
+    }
+    }
+    
+</script>
+        
+      </section>      <!--Services section-->
+                     <!--Page Ending-->
+                <div class="container-fluid mt-4 pend">
+<div class="container">
+  
+  <div class="row mt-4">
+    <div class="col-lg-3 col-md-6" style="line-height:2rem;" >
+      <P class="display-6"> Impact </p>
+    <p> A108 Adam Street New York, NY 535022 United States</p>
+    <p> <b>Phone:</b> +1 5589 55488 55</p>
+    <p> <b>Email:</b> info@example.com</p>
+    </div>  <!--First Column-->
+      <div class="col-lg-2 col-md-6" style="line-height:3rem;">
+        <h4>  Useful Links</h4>
+        <ul style="list-style-type:none;">
+          <li> <i class="bi bi-caret-right-fill" style="color:#5fcf80"></i> Home </li>
+          <li> <i class="bi bi-caret-right-fill" style="color:#5fcf80"></i> About us </li>
+          <li> <i class="bi bi-caret-right-fill" style="color:#5fcf80"></i> Services </li>
+          <li> <i class="bi bi-caret-right-fill" style="color:#5fcf80"></i> Terms of Services </li>
+          <li> <i class="bi bi-caret-right-fill" style="color:#5fcf80"></i> Privacy Policy </li>
+       
+        </ul>
+    </div>  <!--Second Column-->
+  <div class="col-lg-3 col-md-6" style="line-height:3rem;">
+        <h4> Our Services </h4>
+        <ul style="list-style-type:none;">
+          <li> <i class="bi bi-caret-right-fill" style="color:#5fcf80"></i> Web Design </li>
+          <li> <i class="bi bi-caret-right-fill" style="color:#5fcf80"></i> Web Development </li>
+          <li> <i class="bi bi-caret-right-fill" style="color:#5fcf80"></i> Product Managment </li>
+          <li> <i class="bi bi-caret-right-fill" style="color:#5fcf80"></i> Marketing </li>
+          <li> <i class="bi bi-caret-right-fill" style="color:#5fcf80"></i> Graphic Design </li>
+       
+        </ul>
+    </div>  <!--Third Column-->
+  <div class="col-lg-3 col-md-6" style="line-height:2rem;">
+        <h4>  Join Our Newsletter</h4>
+    <p> Tamen quem nulla quae legam multos aute sint culpa legam noster magna <p>
+      <div class="input-group-prepend d-flex">
+        <input class="form-control" type="text" placeholder="Join us">
+        <button class="btn subscribe bg-primary text-white" type="button"> Subscribe </button?
+    </div> <!--input group-->
+    </div>  <!--Second Column-->
+  </div> <!--Grid-->
+     
+ </div> <!--Container-->
+ </div>  <!--Container fluid-->
+</body>
