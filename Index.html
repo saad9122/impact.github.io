@@ -61,9 +61,12 @@
        let x=document.getElementById("myNavbar");
        let y=document.getElementById("TogglerIcon");
        if (x.className === "mnav"){
+
+        document.body.style.overflow = "hidden"
        x.className += " mobile";
        y.innerHTML="&#9587;";
        } else {
+        document.body.style.overflow = "auto"
        
        x.className = "mnav";
        y.innerHTML="&#9776;";
